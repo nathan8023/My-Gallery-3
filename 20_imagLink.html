@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+
+  <script>
+  
+  </script>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="favorite" src="Assets/favorite.jpg">
+        <img id="hall" src="Assets/hall.jpg">
+        <img id="klata" src="Assets/klata.jpg">
+        <img id="me and Dad" src="Assets/Me and Dad.jpg">
+        <img id="naked" src="Assets/naked.jpg">
+        <img id="still" src="Assets/still.jpg">
+
+
+
+    </a-assets>
+    
+    <a-image 
+    src="#hall"
+    position="-2 2 -5"
+    width="3"
+    height="2"
+    ></a-image>
+
+    <a-image 
+    src="#me and Dad"
+    position="-2 2 5"
+    width="3"
+    height="2"
+    ></a-image>
+
+    <a-image 
+    src="#favorite"
+    position="-2 2 10"
+    width="3"
+    height="2"
+    ></a-image>
+
+    <a-image 
+    src="#naked"
+    position="-2 2 15"
+    width="3"
+    height="2"
+    ></a-image>
+
+    <a-image 
+    src="#klata"
+    position="-2 2 20"
+    width="3"
+    height="2"
+    ></a-image>
+
+    <a-image 
+    src="#still"
+    position="-2 2 25"
+    width="3"
+    height="2"
+    ></a-image>
+    
+     <a-sky color="darkblue"></a-sky>
+     <a-plane color="white" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+    
+     <a-camera>
+      <a-entity cursor="fuse: false; rayOrigin:mouse;" raycaster="objects:a-image" position="0 0 -1" >
+      </a-entity>
+    </a-camera>
+
+    </a-scene>
+  </body>
+</html>
